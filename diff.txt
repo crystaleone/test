@@ -1,0 +1,12 @@
+--------------------
+Comparing Scripts/ to copyScripts/
+Directory lists are identical
+Comparing contents
+lister_walk.py matches
+hello-in.py matches
+hello-out.py matches
+echo.py matches
+launchmodes.py matches
+lister_recur.py matches
+========================================
+No diffs found.

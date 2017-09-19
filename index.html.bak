@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<!-- genhtml insert ^^ ===================================================================-->
+<!-- 12/15: Add a doctype spec on line 1 so IE does fixed footer positioning at bottom -->
+<!-- But use HTML 4 (not 5) spec, so images in tables look as they did with no doctype -->
+<!-- Makes some things render diff (e.g, tables at top, and having hdrs), but no worse -->
+<!-- More details: https://en.wikipedia.org/wiki/Quirks_mode#Comparison_of_document_types -->
+<!-- =====================================================================================-->
+
+<HTML>
+
+
+<HEAD>
+
+<TITLE>Mark Lutz's Books, Software, Etc.</TITLE>
+
+<!--genhtml nested insert: select the default site icon.txt (though others can be used directly too)-->
+<!--genhtml insert=================================================================================================================-->
+<!--favicon.ico in root dir doesn't work on this site, link is per-page, png/gif works only on IE 11+, x-icon suffices on IE 9 -->
+<!--link rel="shortcut icon" type="image/png" href="http://www.rmi.net/~lutz/RAT.png" / -->
+<!--link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://www.rmi.net/~lutz/favicon.ico" / -->
+
+<!--UPDATE: now auto uses local favicon.ico on new learning-python.com/books goaddy server; prior links kept in case of move -->
+<!--code this in <HEAD> -->
+
+<link rel="shortcut icon" type="image/x-icon" href="http://learning-python.com/favicon.ico" />
+<!--===============================================================================================================================-->
+
+
+<!--genhtml insert=====================================================================-->
+<!--7/6/14: JS analytics code in <HEAD>, to isolate high traffic pages, if JS enabled  -->
+<!-- training sites's id: ga('create', 'UA-52578333-1', 'auto'); -->
+<!-- book site's id:      ga('create', 'UA-52579036-1', 'auto'); -->   <!-- now used for all -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52579036-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!--====================================================================================-->
+
+
+<!--genhtml insert================================================-->
+<!--11/15: code in <HEAD>, for fonts, borders, navbars, etc.      -->
+<!--could also be an in-page <STYLE> sheet, as genhtml pastes text-->
+
+<link rel="stylesheet" type="text/css" href="_main.css">
+<!--==============================================================-->
+
+
+</HEAD>
+
+
+
+<BODY BGCOLOR=white>    <!-- NOT full page, post fixed toolbar: should match book links page -->
+
+<P>
+<TABLE bgcolor=cornsilk width="100%" border=0>
+<tr>
+
+
+<td width=50px valign=top bgcolor=tan>   
+<TABLE border=0 style="width: 50px;">
+<tr><td>
+  <A HREF="about-lp.html">    
+  <IMG SRC="lp5e-small.gif"      ALIGN=left  ALT="[LP5E]"     hspace=6 vspace=3 border=2 width=72 height=95></A>      <!--was duller ora-lp5e-tiny.jpg-->
+<tr><td>
+  <A HREF="about-pp.html">    
+  <IMG SRC="ora-pp4e-small.gif"  ALIGN=left  ALT="[PP4E]"     hspace=6 vspace=3 border=2 width=72 height=95></A>      <!--was duller ora-pp4e-tiny.jpg-->
+<tr><td>
+  <A HREF="about-pyref.html"> 
+  <IMG SRC="ora-pyref5e.gif"     ALIGN=left  ALT="[PyRef5E]"  hspace=6 vspace=3 border=2 width=45 height=74></A>      <!--was duller ora-pyref5e-tiny.jpg-->
+</TABLE>
+
+
+<td><td>
+<td>
+<H1><I>Mark Lutz's Books, Software, Etc.</I></H1>
+
+
+<P>
+<I>Welcome</I>.
+At this site, you can explore:
+</P>
+
+
+<P>
+<TABLE border=0 cellpadding=10 cellspacing=3>
+<!-- jan16: drop nowrap, but increase fixed size (see css) -->
+  
+<TR>
+<TD>
+<TD bgcolor=tan align=center> <A class=blocklink HREF="index-book-links.html" style="color: black;">
+   <B>Books</B></A>
+
+<TD bgcolor=tan align=center> <A class=blocklink HREF="about-python.html" style="color: black;">
+    <B>Python</B></A>
+
+<TR>
+<TD>
+<TD bgcolor=tan align=center> <A class=blocklink HREF="programs.html" style="color: black;">
+   <B>Programs</B></A>
+
+<TD bgcolor=tan align=center> <A class=blocklink HREF="formalbio.html" style="color: black;">
+    <B>Author</B></A>
+
+<TR>
+<TD>
+<TD bgcolor=tan align=center> <A class=blocklink HREF="posts.html" style="color: black;">
+    <B>Blog</B></A> 
+
+<TD bgcolor=tan align=center> <A class=blocklink HREF="training.html" style="color: black;">
+    <B>Training</B></A>
+
+</TABLE>
+
+
+<P>
+You can also click the book images to the left to jump to book titles. 
+This site's latest update: <I>Aug-19-2017</I>.
+</tr>
+</TABLE>
+</P>
+
+
+
+<!--genhtml insert=====================================================================================-->
+<!--Nov15: added via genhtml.py, to avoid pasting footer in every file on changes -->
+<!--The following might avoid pastes too, but fails on IE, and JS and PHP are non-starters-->
+<!--<OBJECT data="footer-book.html" width="100%">[Toplevel site links toolbar]</OBJECT>-->
+
+</P>
+<BR>
+<TABLE class=footertable bgcolor=tan width="100%">
+
+<!-- nested insert -->
+<TD align=center>
+  <A class=blocklinkbar href="http://www.python.org">                                <!--border=0 for IE img links-->
+  <IMG SRC="PythonPowered.gif" ALT="[Python Logo]" border=0 width=55 height=22></A>  <!--scale larger gif for res-->
+<TD align=center>
+  <A class=blocklinkbar HREF="index.html">Home</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="index-book-links.html">Books</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="programs.html">Programs</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="posts.html">Blog</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="about-python.html">Python</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="formalbio.html">Author</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="training.html">Training</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="mailto:lutz@learning-python.com">Email</A>
+<TD align=center>
+  <A class=blocklinkbar HREF="sitesearch.html">Search</A>
+<!--
+<TD align=center>
+  <A class=blocklinkbar HREF="#">Top</A>
+-->
+<TD align=center>
+  &copy;<I>M.Lutz</I>
+<!-- end nested insert -->
+
+</TABLE>
+<!--===================================================================================================-->
+
+
+</BODY>
+</HTML>
+
+

@@ -1,0 +1,43 @@
+<html><title>CGI 101</title>
+<body>
+<h1>Common input devices</h1>
+<hr>
+<form method=POST action="cgi-bin/tutor5.py">
+  <h3>Please complete the following form and click send</h3>
+  <p><table>
+    <tr>
+	  <th align=right>Name:
+	  <td><input type=text name=name>
+    <tr>
+	  <th align=right>shoe size:
+	  <td><table>
+	  <td><input type=radio name=shoesize value=small>small
+	  <td><input type=radio name=shoesize value=medium>medium
+	  <td><input type=radio name=shoesize value=large>large
+	  </table>
+	 <tr>
+	   <th align=right>occupation:
+	   <td><select name=job>
+	     <option>developer
+		 <option>manage
+		 <option>student
+		 <option>evangelist
+		 <option>other
+	   </select>
+	 <tr>>
+	   <th align=right>political affiliations:
+	   <td><table>
+	   <td><input type=checkbox name=language value=python>pythonista
+	   <td><input type=checkbox name=language value=perl>perlmonger
+	   <td><input type=checkbox name=language value=Tcl>tcler
+	   </table>
+	 <tr>
+	   <th align=right>comments:
+	   <td><textarea name=comment cols=30 rows=2>Entger text here</textarea>
+	 <tr>
+	   <td colspan=2 align=center>
+	   <input type=submit value="send">
+  </table>
+</form>
+<hr>
+</body></html>

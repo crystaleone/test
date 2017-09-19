@@ -1,0 +1,30 @@
+--------------------
+Comparing Scripts/ to /tmp
+Files unique to Scripts/
+... lister_walk.py
+... hello-in.py
+... hello-out.py
+... echo.py
+... launchmodes.py
+... lister_recur.py
+Files unique to /tmp
+... yum_save_tx-2017-05-24-17-511BozJb.yumtx
+... isp-forward
+... somedatabase.db
+... pipefifo
+... python.msi
+... pysplit
+... audit.log
+... copyScripts
+... .ICE-unix
+... public_html
+... tempsplit
+... yum_save_tx-2017-05-24-17-55M10anr.yumtx
+... log
+... audit_join.log
+... pysplit_join.log
+... yum_save_tx-2017-07-19-14-401bP320.yumtx
+Comparing contents
+========================================
+Diffs found: 1
+- unique files at Scripts/ - /tmp

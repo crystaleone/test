@@ -1,0 +1,4 @@
+hello stream world
+enter a number>8 squared is 64
+enter a number>6 squared is 36
+enter a number>bye

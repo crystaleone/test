@@ -1,0 +1,3 @@
+bob,developer,800
+sue,music,900
+ann,manager,800
